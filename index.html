@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Coquette Portfolio</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      margin: 0;
+      padding: 0;
+      background: #fffafc;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #fbe3ec;
+      border-bottom: 3px dotted #e5a9b6;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #b76e79;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #a85d70;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff0f6;
+      border: 2px solid #f1c6d3;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      text-align: center;
+      color: #a85d70;
+    }
+    .home img {
+      display: block;
+      margin: 20px auto;
+      width: 220px;
+      height: auto;
+      border-radius: 50%;
+      border: 4px double #f1c6d3;
+    }
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      padding: 8px;
+      margin: 6px 0;
+      background: #fce8ef;
+      border-left: 5px solid #e5a9b6;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #fbe3ec;
+      border-top: 3px dotted #e5a9b6;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    /* Simple scroll animation */
+    .hidden {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s ease-out;
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home hidden">
+    <h2>Welcome!</h2>
+    <img src="/Gemini_Generated_Image_t5idr0t5idr0t5id.png" alt="Owner Photo">
+    <p style="text-align:center">Hi, I'm Ashley Suezo ✨ A dreamer with a soft coquette style.  
+    This is my personal portfolio — delicate, simple, and uniquely me.</p>
+  </section>
+
+  <section id="about" class="hidden">
+    <h2>About Me</h2>
+    <p>
+      I'm Ashley Suezo, a passionate student and creative soul who loves soft aesthetics, elegant designs, 
+      and meaningful projects. I enjoy blending beauty and functionality in everything I do.  
+      Inspired by the coquette style, I value softness, creativity, and a touch of romance.
+    </p>
+  </section>
+
+  <section id="skills" class="skills hidden">
+    <h2>My Skills</h2>
+    <ul>
+      <li>🌸 HTML, CSS, JavaScript</li>
+      <li>🎀 Graphic & Visual Design</li>
+      <li>🌸 Photography & Editing</li>
+      <li>🎀 Creative Writing</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="hidden">
+    <h2>Contact Me</h2>
+    <p style="text-align:center">
+      📧 Email: <a href="mailto:your.email@example.com">suezoashley@gmail.comr</a><br>
+      📱 Instagram: <a href="#">@spi_zyyyy</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Ashley Suezo — Made with love and a coquette touch 🌷</p>
+  </footer>
+
+  <script>
+    // Reveal sections on scroll
+    const hiddenEls = document.querySelectorAll('.hidden');
+    window.addEventListener('scroll', () => {
+      hiddenEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+          el.classList.add('show');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
